@@ -1,0 +1,56 @@
+main_menu:
+
+  - text: "INICIO"
+    url: "/"
+
+  - text: "¿QUIÉNES SOMOS?"
+    url: "/"
+
+  - text: "¿QUÉ OFRECEMOS?"
+    url: "/"
+    menu_type: "dropdown"
+    has_submenu: "true"
+    label_two:
+      - sub_menu_text: "Capacidades Tecnológicas"
+        sub_menu:
+          - text: "IA"
+            url: "/capacidad-tecnologica/index"
+
+          - text: "ERP"
+            url: "/capacidad-tecnologica/"
+
+          - text: "CMS"
+            url: "/capacidad-tecnologica/"
+
+          - text: "BPM"
+            url: "/capacidad-tecnologica/"
+
+          - text: "ECM"
+            url: "/capacidad-tecnologica/"
+
+          - text: "CRM"
+            url: "/capacidad-tecnologica/"
+
+          - text: "BI"
+            url: "/capacidad-tecnologica/"
+
+      - sub_menu_text: "Servicios"
+        sub_menu:
+          - text: "Servicio de IA y Aprendizaje Automático"
+            url: "/servicio/index"
+
+          - text: "Servicio en la Nube"
+            url: "/servicio/"
+
+          - text: "Servicio de Ciberseguridad"
+            url: "/servicio/"
+
+          - text: "Desarrollo de Software a Medida"
+            url: "/servicio/"
+
+          - text: "Consultoría Tecnológica"
+            url: "/servicio/"
+
+  - text: "CONTÁCTANOS"
+    url: "/"
+    
