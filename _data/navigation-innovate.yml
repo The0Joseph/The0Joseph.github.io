@@ -14,25 +14,25 @@ main_menu:
       - sub_menu_text: "Capacidades Tecnológicas"
         sub_menu:
           - text: "IA"
-            url: "/capacidad-tecnologica/index"
+            url: "/capacidades-tecnologicas/implementacion_IA.html"
 
           - text: "ERP"
-            url: "/capacidad-tecnologica/"
+            url: "/capacidades-tecnologicas/"
 
           - text: "CMS"
-            url: "/capacidad-tecnologica/"
+            url: "/capacidades-tecnologicas/"
 
           - text: "BPM"
-            url: "/capacidad-tecnologica/"
+            url: "/capacidades-tecnologicas/"
 
           - text: "ECM"
-            url: "/capacidad-tecnologica/"
+            url: "/capacidades-tecnologicas/"
 
           - text: "CRM"
-            url: "/capacidad-tecnologica/"
+            url: "/capacidades-tecnologicas/"
 
           - text: "BI"
-            url: "/capacidad-tecnologica/"
+            url: "/capacidades-tecnologicas/"
 
       - sub_menu_text: "Servicios"
         sub_menu:

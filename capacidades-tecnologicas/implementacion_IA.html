@@ -1,0 +1,162 @@
+---
+layout: default
+title: Snowlake - App Landing
+custom_css: purple
+custom_font: font2
+
+slider_area:
+  enable: true
+  title: "En Innovate"
+  sub_title: "Brindamos soluciones tecnológicas personalizadas para optimizar procesos y mejorar el rendimiento empresarial, desde consultoría hasta desarrollo de software e inteligencia artificial."
+  image: "/assets/innovate/img/home/business-people-meeting.jpg"
+
+services_area:
+  enable: true
+  title: "Implementación de IA"
+  sub_title: "Soluciones de IA para transformar procesos empresariales y potenciar la innovación."
+  services:
+
+    - title: "Implementación de Inteligencia Artificial"
+      image: "/assets/innovate/img/capacidad/IA-01.png"
+      description: |
+        En INNOVATE, reconocemos que la Inteligencia Artificial (IA) está revolucionando la forma en que las empresas operan y toman decisiones. Nuestra solución de IA está diseñada para integrar tecnologías avanzadas en los procesos empresariales, impulsando la innovación, la eficiencia y la competitividad.
+
+
+two_columns_area_one:
+  enable: true
+  title: "¿Qué es?"
+  sub_title: "Sistemas que imitan la inteligencia humana para resolver problemas y tomar decisiones."
+  image: "/assets/innovate/img/capacidad/IA-02.jpg"
+  youtube_video_url: "/assets/innovate/img/capacidad/IA-02.jpg"
+  description: "La Inteligencia Artificial (IA) es una rama de la informática que se centra en la creación de sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el aprendizaje, el razonamiento, la resolución de problemas y la toma de decisiones. La IA abarca una variedad de tecnologías, incluyendo el aprendizaje automático (machine learning), el procesamiento del lenguaje natural (NLP), la visión por computadora y los sistemas de recomendación."
+
+---
+<div class="content-wrapper">
+    {% include headerup.html extra_class="absolute transparent inverse-text" light_logo="true" container_class="container" %}
+
+    {% if page.slider_area.enable %}
+    <div class="wrapper dark-wrapper">
+        <div class="rev_slider_wrapper fullwidth-container">
+            <div id="slider4" class="rev_slider fullwidthbanner" data-version="5.4.7">
+            <ul>
+                <li data-transition="fade" data-thumb="">
+                <img src="{{page.slider_area.image}}" alt="" />
+            {% if page.slider_area.title %}
+                <div class="tp-caption font-weight-600 color-white" 
+                    data-x="['left','left','left','center']" 
+                    data-y="middle" 
+                    data-hoffset="['50','50','30','0']" 
+                    data-voffset="['-90','-90','-90','-70']" 
+                    data-fontsize="['44','44','38','30']" 
+                    data-lineheight="['54','54','48','40']" 
+                    data-width="['500','500','400','340']" 
+                    data-textAlign="['left','left','left','center']" 
+                    data-whitespace="['normal','normal','normal','normal']" 
+                    data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+                    data-responsive="on" 
+                    data-responsive_offset="on" style="z-index: 9;">{{page.slider_area.title}} 
+                </div>
+            <!-- /.tp-caption -->
+            {% endif %}
+                {% if page.slider_area.sub_title %}
+                <div class="tp-caption font-weight-400 color-white" 
+                    data-x="['left','left','left','center']" 
+                    data-y="middle" 
+                    data-hoffset="['50','50','30','0']" 
+                    data-voffset="['60','60','30','45']" 
+                    data-fontsize="['26','26','19','18']" 
+                    data-lineheight="['36','36','29','28']" 
+                    data-width="['500','500','400','340']" 
+                    data-textAlign="['left','left','left','center']" 
+                    data-whitespace="['normal','normal','normal','normal']" 
+                    data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+                    data-responsive="on" 
+                    data-responsive_offset="on" style="z-index: 9;">{{page.slider_area.sub_title}} 
+                </div>
+            <!-- /.tp-caption -->
+            {% endif %}
+
+                </li>
+            </ul>
+            <div class="tp-bannertimer tp-bottom"></div>
+            </div>
+            <!-- /.rev_slider -->
+        </div>
+    <!-- /.rev_slider_wrapper -->
+    </div>
+    <!-- /.wrapper -->
+    {% endif %}
+
+    <div class="wrapper light-wrapper">
+        <div class="container inner">
+            {% if page.services_area.enable %}
+            <div class="services-area">
+                <div class="row">
+                    <div class="col-md-7 mx-auto">
+                    <div class="space140"></div>
+                    <h2 class="title-color color-gray text-center">{{page.services_area.title}}</h2>
+                    <h3 class="display-3 text-center">{{page.services_area.sub_title}}</h3>
+                    <div class="space40"></div>
+                </div>
+            </div>
+            {% for service in page.services_area.services %}
+            {% assign chck_number = forloop.index | modulo: 2 %}
+            <!--/.row -->
+            <div class="space120"></div>
+            <div class="row align-items-center">
+                {% if service.image %}
+                <div class="col-lg-6 order-lg-{{chck_number}}">
+                <div class="img-blob blob15">
+                    <img src="{{service.image}}" style="width: 30rem" alt="{{service.title}}"/>
+                </div>
+                </div>
+                {% endif %}
+                <div class="space30 d-none d-md-block d-lg-none"></div>
+                <div class="col-lg-6 pr-60 pr-md-15">
+                <h3>{{service.title}}</h3>
+                <div class="space10"></div>
+                <p>{{service.description}}</p>
+                </div>
+                <!--/column -->
+            </div>
+            <!--/.row -->
+            {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if page.two_columns_area_one.enable %}
+            <div class="two-columns-one">
+              <div class="space140"></div>
+              <div class="row align-items-center">
+                <div class="col-lg-6 play-wrapper light-gallery-wrapper text-center">
+                  {% if page.two_columns_area_one.image %}
+                  <div class="img-blob blob7">
+                    <img src="{{page.two_columns_area_one.image}}" style="width: 30rem" alt="{{page.two_columns_area_one.title}}"/>
+                  </div>
+                  {% endif %}
+                </div>
+                <!--/column -->
+                <div class="space30 d-none d-md-block d-lg-none"></div>
+                <div class="col-lg-6 pl-60 pl-md-15">
+                  {% if page.two_columns_area_one.title %}
+                   <h2 class="title-color color-default">{{page.two_columns_area_one.title}}</h2>
+                  {% endif %}
+                  {% if page.two_columns_area_one.sub_title %}
+                   <h3 class="display-3">{{page.two_columns_area_one.sub_title}}</h3>
+                  {% endif %}
+                  <div class="space20"></div>
+                  <div class="row">
+                      <p class="ml-2">{{page.two_columns_area_one.description}}</p>
+                  </div>
+                  <!--/.row -->
+                </div>
+                <!--/column -->
+            </div>
+            <!--/.row -->
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+
+</div>    
