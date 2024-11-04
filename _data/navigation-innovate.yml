@@ -14,42 +14,42 @@ main_menu:
       - sub_menu_text: "Capacidades Tecnológicas"
         sub_menu:
           - text: "IA"
-            url: "/capacidades-tecnologicas/implementacion_IA.html"
+            url: "/pages-capacidades-tecnologicas/implementacion_IA.html"
 
           - text: "ERP"
-            url: "/capacidades-tecnologicas/"
+            url: "/pages-capacidades-tecnologicas/"
 
           - text: "CMS"
-            url: "/capacidades-tecnologicas/"
+            url: "/pages-capacidades-tecnologicas/"
 
           - text: "BPM"
-            url: "/capacidades-tecnologicas/"
+            url: "/pages-capacidades-tecnologicas/"
 
           - text: "ECM"
-            url: "/capacidades-tecnologicas/"
+            url: "/pages-capacidades-tecnologicas/"
 
           - text: "CRM"
-            url: "/capacidades-tecnologicas/"
+            url: "/pages-capacidades-tecnologicas/"
 
           - text: "BI"
-            url: "/capacidades-tecnologicas/"
+            url: "/pages-capacidades-tecnologicas/"
 
       - sub_menu_text: "Servicios"
         sub_menu:
           - text: "Servicio de IA y Aprendizaje Automático"
-            url: "/servicio/index"
+            url: "/page-servicios/servicio_IA.html"
 
           - text: "Servicio en la Nube"
-            url: "/servicio/"
+            url: "/page-servicios/"
 
           - text: "Servicio de Ciberseguridad"
-            url: "/servicio/"
+            url: "/page-servicios/"
 
           - text: "Desarrollo de Software a Medida"
-            url: "/servicio/"
+            url: "/page-servicios/"
 
           - text: "Consultoría Tecnológica"
-            url: "/servicio/"
+            url: "/page-servicios/"
 
   - text: "CONTÁCTANOS"
     url: "/"

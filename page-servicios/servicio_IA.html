@@ -1,0 +1,74 @@
+---
+layout: default
+title: Snowlake - App Landing
+custom_css: purple
+custom_font: font2
+
+slider_area:
+  enable: true
+  title: "En Innovate"
+  sub_title: "Brindamos soluciones tecnológicas personalizadas para optimizar procesos y mejorar el rendimiento empresarial, desde consultoría hasta desarrollo de software e inteligencia artificial."
+  image: "/assets/innovate/img/home/business-people-meeting.jpg"
+
+
+---
+
+<div class="content-wrapper">
+    {% include headerup.html extra_class="absolute transparent inverse-text" light_logo="true" container_class="container" %}
+
+    {% if page.slider_area.enable %}
+    <div class="wrapper dark-wrapper">
+        <div class="rev_slider_wrapper fullwidth-container">
+            <div id="slider4" class="rev_slider fullwidthbanner" data-version="5.4.7">
+            <ul>
+                <li data-transition="fade" data-thumb="">
+                <img src="{{page.slider_area.image}}" alt="" />
+            {% if page.slider_area.title %}
+                <div class="tp-caption font-weight-600 color-white" 
+                    data-x="['left','left','left','center']" 
+                    data-y="middle" 
+                    data-hoffset="['50','50','30','0']" 
+                    data-voffset="['-90','-90','-90','-70']" 
+                    data-fontsize="['44','44','38','30']" 
+                    data-lineheight="['54','54','48','40']" 
+                    data-width="['500','500','400','340']" 
+                    data-textAlign="['left','left','left','center']" 
+                    data-whitespace="['normal','normal','normal','normal']" 
+                    data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+                    data-responsive="on" 
+                    data-responsive_offset="on" style="z-index: 9;">{{page.slider_area.title}} 
+                </div>
+            <!-- /.tp-caption -->
+            {% endif %}
+                {% if page.slider_area.sub_title %}
+                <div class="tp-caption font-weight-400 color-white" 
+                    data-x="['left','left','left','center']" 
+                    data-y="middle" 
+                    data-hoffset="['50','50','30','0']" 
+                    data-voffset="['60','60','30','45']" 
+                    data-fontsize="['26','26','19','18']" 
+                    data-lineheight="['36','36','29','28']" 
+                    data-width="['500','500','400','340']" 
+                    data-textAlign="['left','left','left','center']" 
+                    data-whitespace="['normal','normal','normal','normal']" 
+                    data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+                    data-responsive="on" 
+                    data-responsive_offset="on" style="z-index: 9;">{{page.slider_area.sub_title}} 
+                </div>
+            <!-- /.tp-caption -->
+            {% endif %}
+
+                </li>
+            </ul>
+            <div class="tp-bannertimer tp-bottom"></div>
+            </div>
+            <!-- /.rev_slider -->
+        </div>
+    <!-- /.rev_slider_wrapper -->
+    </div>
+    <!-- /.wrapper -->
+    {% endif %}
+
+    {% include service.html%}
+
+</div>

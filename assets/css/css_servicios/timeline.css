@@ -2,11 +2,11 @@
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección 02 - linea de tiempo */
 
+
 .section-timeline  h2{
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    color: var(--color-amarillo-paleta-5);
 }
 
 .section-timeline{
@@ -59,7 +59,7 @@
 .section-timeline-item > article > .timeline-item-content{
     height: 100%;
     width: 600px;
-    background-color: var(--color-blanco);
+    background-color: var(--color-white);
     padding: 30px;
     z-index: 9;
 } 
@@ -69,8 +69,8 @@
     height: 100px;
     position: relative;
     text-align: center;
-    background-color: var(--color-amarillo-paleta-0);
-    color: var(--color-amarillo-paleta-5);
+    background-color: var(--color-white);
+    color: var(--color-gray);
     border-radius: 3rem;
     margin: 0 16px;
     z-index: 9;
@@ -89,7 +89,7 @@
     content: '';
     width: 3px;
     height: 100px;
-    background-color: var(--color-amarillo-paleta-2);
+    background-color: var(--color-gray);
     position: absolute;
     z-index: 0;
     top: 100px;
@@ -99,7 +99,7 @@
 .section-timeline-item:nth-child(odd) > .timeline-item-icon::before {
     content: '';
     position: absolute;
-    background-color: var(--color-amarillo-paleta-2);
+    background-color: var(--color-gray);
     width: 16px;
     height: 3px;
     bottom: 50px;
@@ -111,7 +111,7 @@
 .section-timeline-item:nth-child(even) > .timeline-item-icon::before {
     content: '';
     position: absolute;
-    background-color: var(--color-amarillo-paleta-2);
+    background-color: var(--color-gray);
     width: 16px;
     height: 3px;
     bottom: 50px;
