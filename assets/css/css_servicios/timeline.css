@@ -46,7 +46,7 @@
 
 .section-timeline-item > article > .timeline-item-title{
     width: 200px;
-    background-color: var(--color-amarillo-paleta-1);
+    background-color: #e7e7e7;
     display: flex;
     justify-content: center;
     align-items: center;

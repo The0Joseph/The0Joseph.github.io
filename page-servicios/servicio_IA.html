@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Snowlake - App Landing
+title: Servicio de IA - Innovate
 custom_css: purple
 custom_font: font2
 
@@ -9,6 +9,44 @@ slider_area:
   title: "En Innovate"
   sub_title: "Brindamos soluciones tecnológicas personalizadas para optimizar procesos y mejorar el rendimiento empresarial, desde consultoría hasta desarrollo de software e inteligencia artificial."
   image: "/assets/innovate/img/home/business-people-meeting.jpg"
+
+
+timeline_area:
+  enable: true
+  title: "Nuestro Enfoque"
+  sub_title: "Estrategias personalizadas para impulsar el éxito y crecimiento sostenible de nuestros clientes."
+  tabs:
+    - title: "Experiencia Multidisciplinaria"
+      icon: "search"
+      description: |
+        Entendemos a fondo sus desafíos de negocio y objetivos.
+
+    - title: "Diseño de Solución"
+      icon: "crop"  
+      description: |
+        Desarrollamos una solución de IA/ML personalizada que se alinea con sus necesidades específicas.
+
+    - title: "Desarrollo e Implementación"
+      icon: "grid"
+      description: |
+        Construimos y desplegamos la solución utilizando metodologías ágiles.
+
+    - title: "Pruebas y Refinamiento"
+      icon: "task-list"
+      description: |
+        Realizamos pruebas exhaustivas y refinamos los modelos para asegurar precisión y rendimiento.
+        
+    - title: "Despliegue y Monitoreo"
+      icon: "set-square"
+      description: |
+        Implementamos la solución en su entorno y proporcionamos monitoreo continuo.
+
+    - title: "Mejora Continua"
+      icon: "arrow-square-up-right"
+      description: |
+        Iteramos y mejoramos constantemente los modelos basándonos en nuevos datos y retroalimentación.
+
+
 
 contact_area:
   enable: true
@@ -26,6 +64,29 @@ contact_area:
     - icon: "/assets/images/icons/co-email-5.png"
       email_01: "innovate@gmail.com"
       email_02: "miguell@gmail.com"
+
+faq_area:
+  enable: true
+  title: "¿Por Qué Elegirnos para sus Proyectos de IA y ML?"
+  sub_title: "Soluciones en IA de alto impacto, adaptadas y responsables para potenciar el crecimiento de su negocio."
+  image: "/assets/images/concept/concept2@2x.png"
+  tabs:
+    - question: "Experiencia Multidisciplinaria"
+      answer: |
+          Nuestro equipo combina experiencia en IA, ciencia de datos, ingeniería de software y conocimiento del dominio empresarial.
+    - question: "Enfoque Personalizado"
+      answer: |
+          NDesarrollamos soluciones a medida que se adaptan perfectamente a sus necesidades y objetivos específicos.
+
+    - question: "Innovación Constante"
+      answer: |
+          Nos mantenemos a la vanguardia de las últimas tendencias y avances en IA y ML.
+    - question: "Escalabilidad"
+      answer: |
+          Nuestras soluciones están diseñadas para crecer con su negocio.
+    - question: "Compromiso con la Ética"
+      answer: |
+          Implementamos IA responsable, considerando aspectos éticos y de privacidad en cada proyecto.
 
 
 ---
@@ -89,8 +150,165 @@ contact_area:
 
     {% include card_expandible.html %}
 
-    {% include timeline.html%}
+    {% if page.timeline_area.enable %}
+    
+    <div class="services-area">
+        <div class="row">
+            <div class="col-md-7 mx-auto">
+            <div class="space140"></div>
+            <h2 class="title-color color-gray text-center">{{page.timeline_area.title}}</h2>
+            <h3 class="display-3 text-center">{{page.timeline_area.sub_title}}</h3>
+            <div class="space40"></div>
+        </div>
+    </div>
+    <section class="section-timeline container">
+    
+        <div class="section-timeline-content">
+    
+            <div class="section-timeline-wrapper">
+              
+              {% for item_timeline in page.timeline_area.tabs%}
+              {% assign chck_number = forloop.index | modulo: 2 %}
+                <!-- 1 -->
+                <div class="section-timeline-item {% if chck_number == 1 %} flex-row {% else %} flex-row-reverse {% endif %}">
+                    <article class="{% if chck_number == 1 %} flex-row {% else %} flex-row-reverse {% endif %}">
+                        <div class="timeline-item-content">
+                            {{item_timeline.description}}
+                        </div>
+                        <div class="timeline-item-title">
+                          {{item_timeline.title}}
+                        </div>
+                    </article>
+                    <div class="timeline-item-icon">
+                        <i class="jam jam-{{item_timeline.icon}}"></i>
+                    </div>
+                </div>
+              {% endfor %}
+    
+                <!-- <div class="section-timeline-item">
+                    <div class="timeline-item-icon">
+                        <i class="jam jam-crop"></i>
+                    </div>
+                    <article>
+                        <div class="timeline-item-title">
+                            Diseño de Solución
+                        </div>
+                        <div class="timeline-item-content">
+                            Desarrollamos una solución de IA/ML personalizada que se alinea con sus necesidades específicas.
+                        </div>
+                    </article>                 
+                </div>
+    
+                <div class="section-timeline-item">
+                    <article>
+                        <div class="timeline-item-content">
+                            Construimos y desplegamos la solución utilizando metodologías ágiles.
+                        </div>
+                        <div class="timeline-item-title">
+                            Desarrollo e Implementación
+                        </div>
+                    </article>
+                    <div class="timeline-item-icon">
+                        <i class="jam jam-grid"></i>
+                    </div>
+                </div>
+    
+                <div class="section-timeline-item">
+                    <div class="timeline-item-icon">
+                        <i class="jam jam-task-list"></i>
+                    </div>
+                    <article>
+                        <div class="timeline-item-title">
+                            Pruebas y Refinamiento
+                        </div>
+                        <div class="timeline-item-content">
+                            Realizamos pruebas exhaustivas y refinamos los modelos para asegurar precisión y rendimiento.
+                        </div>
+                    </article>                 
+                </div>
+    
+                <div class="section-timeline-item">
+                    <article>
+                        <div class="timeline-item-content">
+                            Implementamos la solución en su entorno y proporcionamos monitoreo continuo.
+                        </div>
+                        <div class="timeline-item-title">
+                            Despliegue y Monitoreo
+                        </div>
+                    </article>
+                    <div class="timeline-item-icon">
+                        <i class="jam jam-set-square"></i>
+                    </div>
+                </div>
+    
+                <div class="section-timeline-item">
+                    <div class="timeline-item-icon">
+                        <i class="jam jam-arrow-square-up-right "></i>
+                    </div>
+                    <article>
+                        <div class="timeline-item-title">
+                            Mejora Continua
+                        </div>
+                        <div class="timeline-item-content">
+                            Iteramos y mejoramos constantemente los modelos basándonos en nuevos datos y retroalimentación.
+                        </div>
+                    </article>                 
+                </div> -->
+    
+            </div>
+            
+        </div>
+    
+    </section>
+    {% endif %}
 
+  {% if page.faq_area.enable %}
+  <div class="wrapper light-wrapper inner-bottom ">
+    <div class="space140"></div>
+      <div class="container">
+          <div class="row">
+              {% if page.faq_area.image %}
+              <div class="col-lg-6">
+                  <figure>
+                      <img src="{{page.faq_area.image}}" alt="{{page.faq_area.title}}" />
+                  </figure>
+              </div>
+              {% endif %}
+              <div class="space50 d-none d-md-block d-lg-none"></div>
+              <div class="space10 d-md-none"></div>
+              <div class="col-lg-6 pl-60 pl-md-15">
+                  <h2 class="title-bg bg-default color-default">{{page.faq_area.title}}</h2>
+                  <div class="space10"></div>
+                  <h3 class="display-3">{{page.faq_area.sub_title}}</h3>
+                  <div class="space20"></div>
+                  <div id="accordion-2" class="accordion-wrapper simple">
+                      {% for tab in page.faq_area.tabs %}
+                      <div class="card">
+                          <div class="card-header" id="accordion-heading-2-1">
+                              <h5>
+                                  <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-{{forloop.index}}" aria-expanded="false" aria-controls="accordion-collapse-2-1">
+                                      {{tab.question}}
+                                  </button>
+                              </h5>
+                          </div>
+                          <div id="accordion-collapse-2-{{forloop.index}}" class="collapse" aria-labelledby="accordion-heading-2-{{forloop.index}}" data-target="#accordion-2" data-parent="#accordion-2">
+                              <div class="card-body">
+                                  <p>
+                                      {{tab.answer}}
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      {% endfor %}
+                  </div>
+                  <!-- /.accordion-wrapper -->
+              </div>
+          </div>
+      </div>
+  </div>
+  {% endif %} 
+
+  
         <!--contact-->
     {% if page.contact_area.enable %}
     <div id="contact" class="wrapper image-wrapper bg-auto no-overlay bg-image text-center" data-image-src="{{page.contact_area.image}}">
@@ -132,47 +350,6 @@ contact_area:
     <!-- /.wrapper -->
     {% endif %}
 
-    {% include footer.html %}
 
-  <!--contact-->
-  {% if page.contact_area.enable %}
-  <div id="contact" class="wrapper image-wrapper bg-auto no-overlay bg-image text-center" data-image-src="{{page.contact_area.image}}">
-    <div class="container inner">
-      <div class="row">
-        <div class="col-lg-10 offset-lg-1">
-          <h2 class="title-color color-gray text-center">{{page.contact_area.title}}</h2>
-          <h3 class="display-3">{{page.contact_area.sub_title}}</h3>
-          <div class="space50"></div>
-          <div class="row text-center gutter-60">
-            {% for contact_data in page.contact_area.contact_data %}
-            <div class="col-md-4">
-             {% if contact_data.icon %}
-              <div class="icon icon-svg mb-20">
-                <img src="{{contact_data.icon}}" alt="{{contact_data.icon}}"/>
-              </div>
-              {% endif %}
-              {% if contact_data.info %}
-               <p class="mb-0">{{contact_data.info}}</p>
-              {% endif %}
-              {% if contact_data.email_01 %}
-              <p class="mb-0"><a class="nocolor" href="mailto:{{contact_data.email_01}}">{{contact_data.email_01}}</a></p>
-              {% endif %}              
-              {% if contact_data.email_02 %}
-              <p class="mb-0"><a class="nocolor" href="mailto:{{contact_data.email_02}}">{{contact_data.email_02}}</a></p>
-              {% endif %}
-            </div>
-            {% endfor %}
-            <!--/column -->
-          </div>
-          <!--/.row -->
-        </div>
-        <!-- /column -->
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.wrapper -->
-  {% endif %}
-    
+  {% include footer.html %}
 </div>

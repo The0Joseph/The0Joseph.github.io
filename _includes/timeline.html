@@ -1,15 +1,52 @@
  <!-- Sección 02 - timeline -->
- <div class="services-area">
+ ---
+
+timeline_area:
+  enable: true
+  title: "Nuestro Enfoque"
+  sub_title: "Estrategias personalizadas para impulsar el éxito y crecimiento sostenible de nuestros clientes."
+  tabs:
+    - title: "Experiencia Multidisciplinaria"
+      icon: |
+      description: |
+        Entendemos a fondo sus desafíos de negocio y objetivos.
+
+    - title: "Diseño de Solución"
+      description: |
+        Desarrollamos una solución de IA/ML personalizada que se alinea con sus necesidades específicas.
+
+    - title: "Desarrollo e Implementación"
+      description: |
+        Construimos y desplegamos la solución utilizando metodologías ágiles.
+
+    - title: "Pruebas y Refinamiento"
+      description: |
+        Realizamos pruebas exhaustivas y refinamos los modelos para asegurar precisión y rendimiento.
+        
+    - title: "Despliegue y Monitoreo"
+      description: |
+        Implementamos la solución en su entorno y proporcionamos monitoreo continuo.
+
+    - title: "Mejora Continua"
+      description: |
+        Iteramos y mejoramos constantemente los modelos basándonos en nuevos datos y retroalimentación.
+
+---
+
+
+{% if page.timeline_area.enable %}
+<div class="services-area">
     <div class="row">
         <div class="col-md-7 mx-auto">
         <div class="space140"></div>
-        <h2 class="title-color color-gray text-center">Nuestro Enfoque</h2>
-        <h3 class="display-3 text-center">Estrategias personalizadas para impulsar el éxito y crecimiento sostenible de nuestros clientes.</h3>
+        <h2 class="title-color color-gray text-center">{{page.timeline_area.title}}</h2>
+        <h3 class="display-3 text-center">{{page.timeline_area.sub_title}}</h3>
         <div class="space40"></div>
     </div>
 </div>
 
- <section class="section-timeline container">
+<section class="section-timeline container">
+
     <div class="section-timeline-content">
 
         <div class="section-timeline-wrapper">
@@ -29,8 +66,7 @@
                 </div>
             </div>
 
-            <!-- 2 -->
-            <div class="section-timeline-item">
+            <!-- <div class="section-timeline-item">
                 <div class="timeline-item-icon">
                     <i class="jam jam-crop"></i>
                 </div>
@@ -44,7 +80,6 @@
                 </article>                 
             </div>
 
-            <!-- 3 -->
             <div class="section-timeline-item">
                 <article>
                     <div class="timeline-item-content">
@@ -59,7 +94,6 @@
                 </div>
             </div>
 
-            <!-- 4 -->
             <div class="section-timeline-item">
                 <div class="timeline-item-icon">
                     <i class="jam jam-task-list"></i>
@@ -74,7 +108,6 @@
                 </article>                 
             </div>
 
-            <!-- 5 -->
             <div class="section-timeline-item">
                 <article>
                     <div class="timeline-item-content">
@@ -89,7 +122,6 @@
                 </div>
             </div>
 
-            <!-- 6 -->
             <div class="section-timeline-item">
                 <div class="timeline-item-icon">
                     <i class="jam jam-arrow-square-up-right "></i>
@@ -102,10 +134,12 @@
                         Iteramos y mejoramos constantemente los modelos basándonos en nuevos datos y retroalimentación.
                     </div>
                 </article>                 
-            </div>
+            </div> -->
+
             
         </div>
         
     </div>
 
 </section>
+{% endif %}
