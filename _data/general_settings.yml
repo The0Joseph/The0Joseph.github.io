@@ -1,9 +1,27 @@
 # General Settings
 title: "Snowlake premium jekyll template"
 email: "mloaiza@innovate.pe"
-email_2: "mrisco@innovate.pe"
+email_2: ""
 description: >- # this means to ignore newlines until "baseurl:"
   Brindamos soluciones tecnológicas personalizadas para optimizar procesos y mejorar el rendimiento empresarial, desde consultoría hasta desarrollo de software e inteligencia artificial.
+
+contact_title: "Contáctanos"
+contact_image: "/assets/images/art/map.png"
+contact_sub_title: |
+   ¿Interesado en nuestros servicios? <br class="d-none d-lg-block">¡Contáctanos hoy!
+
+icons_contact: 
+  - icon: "icofont-google-map"
+    color: "color-blue"
+    address_01: 'Ca. 7 de Enero 225, Chiclayo'
+
+  - icon: "icofont-envelope"
+    color: "color-rose"
+    email: "mloaiza@innovate.pe"
+
+  - icon: "icofont-ui-call"
+    color: "color-green"
+    phone_number: "+51 954 498 176"
 
 black_logo_1x: "/assets/images/logo.png"
 black_logo_2x: "/assets/images/logo@2x.png"

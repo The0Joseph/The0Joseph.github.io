@@ -1,0 +1,36 @@
+<div id="contact" class="wrapper image-wrapper bg-auto no-overlay bg-image text-center" data-image-src="{{site.data.general_settings.contact_image}}">
+    <div class="container inner">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <h2 class="title-color color-gray text-center">{{site.data.general_settings.contact_title}}</h2>
+          <h3 class="display-3">{{site.data.general_settings.contact_sub_title}}</h3>
+          <div class="space50"></div>
+          <div class="row text-center gutter-60">
+            {% for contact in site.data.general_settings.icons_contact %}
+            <div class="col-md-4">
+             {% if contact.icon %}
+              <div class="icon icon-svg mb-20  {% if contact.color %} {{contact.color}} {% endif %}" style="font-size: 43px;">
+                <i class="{{contact.icon}}"></i>
+              </div>
+              {% endif %}
+              {% if contact.address_01 %}
+               <p class="mb-0">{{contact.address_01}}</p>
+              {% endif %}
+              {% if contact.phone_number %}
+               <p class="mb-0">{{contact.phone_number}}</p>
+              {% endif %}
+              {% if contact.email %}
+              <p class="mb-0"><a class="nocolor" href="mailto:{{contact.email}}">{{contact.email}}</a></p>
+              {% endif %}              
+            </div>
+            {% endfor %}
+            <!--/column -->
+          </div>
+          <!--/.row -->
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>

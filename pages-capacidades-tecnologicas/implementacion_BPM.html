@@ -28,24 +28,6 @@ two_columns_area_one:
   image: "/assets/innovate/img/capacidad/BPM-02.jpg"
   description: "Business Process Management (BPM) es un enfoque sistemático para hacer que los flujos de trabajo de una organización sean más efectivos, eficientes y capaces de adaptarse a un entorno de negocio en constante cambio. BPM se centra en la identificación, diseño, ejecución, monitoreo y optimización de procesos empresariales."
 
-contact_area:
-  enable: true
-  title: "Contáctanos"
-  image: "/assets/images/art/map.png"
-  sub_title: |
-   ¿Interesado en nuestros servicios? <br class="d-none d-lg-block">¡Contáctanos hoy!
-  contact_data:
-    - icon: "/assets/images/icons/ui-gps.png"
-      info: "Ca. 7 de Enero 225, Chiclayo"
-
-    - icon: "/assets/images/icons/co-telephone.png"
-      info: "+51 954 498 176"
-
-    - icon: "/assets/images/icons/co-email-5.png"
-      email_01: "innovate@gmail.com"
-      email_02: "miguell@gmail.com"
-
-
 ---
 <div class="content-wrapper">
     {% include headerup.html extra_class="absolute transparent inverse-text" light_logo="true" container_class="container" %}
@@ -175,46 +157,9 @@ contact_area:
     </div>
 
 
-    <!--contact-->
-    {% if page.contact_area.enable %}
-    <div id="contact" class="wrapper image-wrapper bg-auto no-overlay bg-image text-center" data-image-src="{{page.contact_area.image}}">
-    <div class="container inner">
-        <div class="row">
-        <div class="col-lg-10 offset-lg-1">
-            <h2 class="title-color color-gray text-center">{{page.contact_area.title}}</h2>
-            <h3 class="display-3">{{page.contact_area.sub_title}}</h3>
-            <div class="space50"></div>
-            <div class="row text-center gutter-60">
-            {% for contact_data in page.contact_area.contact_data %}
-            <div class="col-md-4">
-            {% if contact_data.icon %}
-                <div class="icon icon-svg mb-20">
-                <img src="{{contact_data.icon}}" alt="{{contact_data.icon}}"/>
-                </div>
-                {% endif %}
-                {% if contact_data.info %}
-                <p class="mb-0">{{contact_data.info}}</p>
-                {% endif %}
-                {% if contact_data.email_01 %}
-                <p class="mb-0"><a class="nocolor" href="mailto:{{contact_data.email_01}}">{{contact_data.email_01}}</a></p>
-                {% endif %}              
-                {% if contact_data.email_02 %}
-                <p class="mb-0"><a class="nocolor" href="mailto:{{contact_data.email_02}}">{{contact_data.email_02}}</a></p>
-                {% endif %}
-            </div>
-            {% endfor %}
-            <!--/column -->
-            </div>
-            <!--/.row -->
-        </div>
-        <!-- /column -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-    </div>
-    <!-- /.wrapper -->
-    {% endif %}
+  <!--contact-->
+  {% include contact.html %}
+  <!-- /contact-->
 
     {% include footer.html %}
 </div>    
