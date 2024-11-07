@@ -16,11 +16,11 @@ icons_contact:
     address_01: 'Ca. 7 de Enero 225, Chiclayo'
 
   - icon: "icofont-envelope"
-    color: "color-rose"
+    color: "color-blue"
     email: "mloaiza@innovate.pe"
 
   - icon: "icofont-ui-call"
-    color: "color-green"
+    color: "color-blue"
     phone_number: "+51 954 498 176"
 
 black_logo_1x: "/assets/images/logo.png"

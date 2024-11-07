@@ -150,6 +150,14 @@ faq_area:
 
 
 ---
+<style>
+
+  @media (min-width: 1200px) {
+    .container{
+      max-width: 849px !important;
+    }
+  }
+</style>
 
 <div class="content-wrapper">
 
@@ -221,7 +229,7 @@ faq_area:
     </div>
     <section class="section-card-expandible ">
         <div class="section-card-expandible-content">
-            <div class="container">
+            <div class="container" >
                 {% for card in page.card_expandible_area.cards %}
                 <input type="radio" name="slide" id="c{{ forloop.index }}" {% if forloop.first %}checked{% endif %}>
                 <label for="c{{ forloop.index }}" class="card-expandible-item">

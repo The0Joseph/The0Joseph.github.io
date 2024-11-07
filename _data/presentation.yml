@@ -1,0 +1,10 @@
+
+enable: true
+title: "En Innovate"
+sub_title: |
+    Brindamos soluciones tecnológicas personalizadas para optimizar procesos y mejorar el rendimiento.
+button_text: "Get Started"
+button_url: "#"
+header_image: "/assets/images/art/bg6.jpg"
+header_bottom_image: "/assets/images/art/macbook@2x.png"
+

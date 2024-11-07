@@ -3,36 +3,14 @@ main_menu:
   - text: "INICIO"
     url: "/"
 
-  - text: "¿QUIÉNES SOMOS?"
+  - text: "NOSOTROS"
     url: "/"
 
-  - text: "¿QUÉ OFRECEMOS?"
+  - text: "SERVICIOS"
     url: "/"
     menu_type: "dropdown"
     has_submenu: "true"
     label_two:
-      - sub_menu_text: "Capacidades Tecnológicas"
-        sub_menu:
-          - text: "IA"
-            url: "/pages-capacidades-tecnologicas/implementacion_IA.html"
-
-          - text: "ERP"
-            url: "/pages-capacidades-tecnologicas/implementacion_ERP.html"
-
-          - text: "CMS"
-            url: "/pages-capacidades-tecnologicas/implementacion_CMS.html"
-
-          - text: "BPM"
-            url: "/pages-capacidades-tecnologicas/implementacion_BPM.html"
-
-          - text: "ECM"
-            url: "/pages-capacidades-tecnologicas/implementacion_ECM.html"
-
-          - text: "CRM"
-            url: "/pages-capacidades-tecnologicas/implementacion_CRM.html"
-
-          - text: "BI"
-            url: "/pages-capacidades-tecnologicas/implementacion_BI.html"
 
       - sub_menu_text: "Servicios"
         sub_menu:
