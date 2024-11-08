@@ -161,6 +161,9 @@
     width: 600px;
 }
 
+.section-card-expandible-content .container input:checked + label .card-expandible-item-column-1{
+    display: none;
+}
 .section-card-expandible-content .container input:checked + label .card-expandible-item-column-2{
     opacity: 1 !important;
 }

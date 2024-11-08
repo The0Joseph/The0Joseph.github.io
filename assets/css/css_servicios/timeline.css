@@ -1,7 +1,24 @@
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección 02 - linea de tiempo */
+:root{
+    --color--card-shadow: var(rgba(99, 99, 99, 0.2));
 
+    --color--title-text-color-v1: var(--color-white);
+    --color--title-text-color-v2: var(--color-white);
+    --color--title-bg-v1: var(--color-sky);
+    --color--title-bg-v2: var(--color-blue);
+    
+    --color--decription-bg: var(--color-white);
+
+    --color--icon-bg: var(--color-white);
+    --color--icon-shadow: var(rgba(99, 99, 99, 0.2));
+    --color--icon-text-color: var(--color-blue);
+
+    --color--linea-vertical: var(--color-meander);
+    --color--linea-horizontal: var(--color-meander);
+
+}
 
 .section-timeline  h2{
     font-size: 40px;
@@ -46,20 +63,20 @@
 
 .section-timeline-item > article > .timeline-item-title{
     width: 200px;
-    background-color: #e7e7e7;
+    background-color: var(--color--title-bg-v1);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 9;
-    color: var(--color-amarillo-paleta-5);
+    color: var(--color--title-text-color-v1);
     font-weight: 700;
 }
 
 .section-timeline-item > article > .timeline-item-content{
     height: 100%;
     width: 600px;
-    background-color: var(--color-white);
+    background-color: var(--color--decription-bg);
     padding: 30px;
     z-index: 9;
 } 
@@ -69,8 +86,8 @@
     height: 100px;
     position: relative;
     text-align: center;
-    background-color: var(--color-white);
-    color: var(--color-gray);
+    background-color: var(--color--icon-bg);
+    color: var(--color--icon-text-color);
     border-radius: 3rem;
     margin: 0 16px;
     z-index: 9;
@@ -89,7 +106,7 @@
     content: '';
     width: 3px;
     height: 100px;
-    background-color: var(--color-gray);
+    background-color: var(--color--linea-vertical);
     position: absolute;
     z-index: 0;
     top: 100px;
@@ -99,7 +116,7 @@
 .section-timeline-item:nth-child(odd) > .timeline-item-icon::before {
     content: '';
     position: absolute;
-    background-color: var(--color-gray);
+    background-color: var(--color--linea-horizontal);
     width: 16px;
     height: 3px;
     bottom: 50px;
@@ -107,11 +124,17 @@
     z-index: 1;
 }
 
+.section-timeline-item:nth-child(odd) > article > .timeline-item-title{
+    background-color: var(--color--title-bg-v2);
+    color: var(--color--title-text-color-v2);
+}
+
+
 /* (even): Para los elementos pares (2, 4, 6, ...) */
 .section-timeline-item:nth-child(even) > .timeline-item-icon::before {
     content: '';
     position: absolute;
-    background-color: var(--color-gray);
+    background-color: var(--color--linea-horizontal);
     width: 16px;
     height: 3px;
     bottom: 50px;
@@ -181,22 +204,22 @@
 
     /* (odd): Para los elementos impares (1, 3, 5, ...) */
     .section-timeline-item:nth-child(odd){
-        flex-direction: column;
-        flex-direction: column-reverse;
+        flex-direction: column !important;
+        flex-direction: column-reverse !important;
     }
 
     .section-timeline-item:nth-child(odd) > article{
-        flex-direction: column-reverse;
-        align-items: center;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
     }
 
     /* (even): Para los elementos pares (2, 4, 6, ...) */
     .section-timeline-item:nth-child(even){
-        flex-direction: column;
+        flex-direction: column-reverse !important;
     }
     .section-timeline-item:nth-child(even) > article{
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
     }
     
     /* (odd): Para los elementos impares (1, 3, 5, ...) */
