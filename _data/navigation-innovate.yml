@@ -8,26 +8,23 @@ main_menu:
 
   - text: "SERVICIOS"
     url: "/"
-    menu_type: "dropdown"
-    has_submenu: "true"
-    label_two:
+    menu_type: "megamenu"
+    submenu:
 
-      - sub_menu_text: "Servicios"
-        sub_menu:
-          - text: "Servicio de IA y Aprendizaje Automático"
-            url: "/page-servicios/servicio_IA.html"
+      - text: "Servicio de IA y Aprendizaje Automático"
+        url: "/page-servicios/servicio_IA.html"
 
-          - text: "Servicio en la Nube"
-            url: "/page-servicios/servicio_nube.html"
+      - text: "Servicio en la Nube"
+        url: "/page-servicios/servicio_nube.html"
 
-          - text: "Servicio de Ciberseguridad"
-            url: "/page-servicios/servicio_ciberseguridad.html"
+      - text: "Servicio de Ciberseguridad"
+        url: "/page-servicios/servicio_ciberseguridad.html"
 
-          - text: "Desarrollo de Software a Medida"
-            url: "/page-servicios/servicio_software_medida.html"
+      - text: "Desarrollo de Software a Medida"
+        url: "/page-servicios/servicio_software_medida.html"
 
-          - text: "Consultoría Tecnológica"
-            url: "/page-servicios/servicio_consultoria_tecnologica.html"
+      - text: "Consultoría Tecnológica"
+        url: "/page-servicios/servicio_consultoria_tecnologica.html"
 
   - text: "CONTÁCTANOS"
     url: "/"
