@@ -7,7 +7,7 @@ main_menu:
     url: "/"
 
   - text: "SERVICIOS"
-    url: "/"
+    url: "#id_servicios"
     menu_type: "megamenu"
     submenu:
 
@@ -27,5 +27,5 @@ main_menu:
         url: "/page-servicios/servicio_consultoria_tecnologica.html"
 
   - text: "CONTÁCTANOS"
-    url: "/"
+    url: "#id_contactanos"
     
