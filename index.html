@@ -357,7 +357,8 @@ services_area:
 
       <div class="space20"></div>
       <div class="grid-view d-flex justify-content-center">
-        <div class="row text-center align-items-end carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1140":{"items": "3"}}'>
+        <div class="row text-center align-items-end carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="true" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1140":{"items": "3"}}'>
+          
           {% for service in  page.services_area.services  %}
           <div class="">
             {% if service.image %}
