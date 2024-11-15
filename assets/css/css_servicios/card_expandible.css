@@ -135,12 +135,12 @@
 }
 /* (odd): Para los elementos impares (1, 3, 5, ...) */
  .card-expandible-content-horizontal:nth-child(odd):hover{
-    background-color: #f0eeeede;
+    background-color: #b6f0ffde;
 }
 
 /* (even): Para los elementos pares (2, 4, 6, ...) */
  .card-expandible-content-horizontal:nth-child(even):hover{
-    background-color: #f0eeeede;
+    background-color: #b6f0ffde;
 }
 
 .card-expandible-item > .card-expandible-item-row > .card-expandible-item-content{

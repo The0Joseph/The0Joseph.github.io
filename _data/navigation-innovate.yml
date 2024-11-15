@@ -4,7 +4,7 @@ main_menu:
     url: "/"
 
   - text: "NOSOTROS"
-    url: "/"
+    url: "/page-about/sobre_nosotros.html"
 
   - text: "SERVICIOS"
     url: "#id_servicios"
