@@ -96,7 +96,15 @@ two_columns_area_one:
     .titulo-mision{
         margin-top: 30px;
     }
+
+    .text-present{
+      color: white;
+      font-size: 23px;
+    }
     
+    .img-present{
+      width: 650PX;
+    }
     @media (max-width: 995px) {
         .desktop {
             display: none;
@@ -104,34 +112,29 @@ two_columns_area_one:
         .tablet {
             display: none;
         }
-    .mision-description{
-      bottom: -75px;
-        left: 0px;
-        height: 60%;
-        width: 100%;
-    }
-    .vision-description{
+      .mision-description{
         bottom: -75px;
-        left: 0px;
-        height: 215px;
-        width: 100%;  
+          left: 0px;
+          height: 60%;
+          width: 100%;
+      }
+      .vision-description{
+          bottom: -75px;
+          left: 0px;
+          height: 215px;
+          width: 100%;  
+      
+      }
+      .espacio{
+        margin-top: 40px;
+      }
+      .img-present{
+      width: 300px;
+      }
     
-    }
-    .espacio{
-      margin-top: 40px;
-    }
- 
 
     }
-    .imagen-responsiva {
-        
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%) !important;
-  
-    }
-    
+   
     
     @media (min-width: 600px) and (max-width: 990px) {
         .desktop {
@@ -170,19 +173,17 @@ two_columns_area_one:
                       <img src="{{page.hero_area.header_image}}" alt="{{page.hero_area.title}}" />
                                             <!-- /.tp-caption -->
 
-                     
-                      <div class="row position-relative" style="height: 100wh;">
-                          <div class="col-12 col-md-6 position-relative" style="display: flex; justify-content: center; align-items: center;">
+                     <div>
+                      <div class="row position-relative" style="height: 60vh;">
+                          <div class="col-12 col-md-6 d-flex justify-content-center align-items-end align-items-md-center mb-0 ">
                             
-                            <div 
-                       
-                            >
+                            <div class="text-present">
                             {{page.hero_area.sub_title}}
                             </div>
 
                           </div>
-                          <div class="col-12 col-md-6 position-relative" style="display: flex; justify-content: center; align-items: center;">
-                              <img width="300"
+                          <div class="col-12 col-md-6 position-relative d-flex justify-content-center align-items-center mb-0 " >
+                              <img class="img-present"
                               src="/assets/innovate/img/sobre_nosotros/fondo.jpg" alt="Código en pantalla">
                               
                               
@@ -191,6 +192,7 @@ two_columns_area_one:
                         </div>
                       </div>
                     </div>
+                  </div>
                   </li>
               </ul>
               <div class="tp-bannertimer tp-bottom"></div>
