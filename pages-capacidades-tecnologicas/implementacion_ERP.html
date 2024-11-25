@@ -40,34 +40,81 @@ two_columns_area_one:
 
 
 ---
+<style>
+  .text-present{
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+    .img-present{
+      width: 700px;
+    }
+    @media (min-width: 1200px) {
+      .container{
+        max-width: 1022px !important;
+      }
+    }
+    @media (max-width: 995px) {
+          .desktop {
+              display: none;
+          }
+          .tablet {
+              display: none;
+          }
+        .img-present{
+        width: 260px;
+        }
+      }
+      @media (min-width: 600px) and (max-width: 990px) {
+          .desktop {
+              display: none;
+          }
+          .movil {
+              display: none;
+          }
+      }
+      @media (min-width: 992px) {
+          .tablet {
+              display: none;
+          }
+          .movil {
+              display: none;
+          }
+         
+      }
+  </style>
+  
 <div class="content-wrapper">
     {% include headerup.html extra_class="absolute transparent inverse-text" light_logo="true" container_class="container" %}
 
   <!-- Presentación -->
   {% if page.hero_area.enable %}
-  <div class="wrapper dark-wrapper">
-      <div class="rev_slider_wrapper fullwidth-container">
-          <div id="slider5" class="rev_slider fullwidthbanner" data-version="5.4.7">
-              <ul>
-                  <li data-transition="fade" data-thumb="">
-                      <img src="{{page.hero_area.header_image}}" alt="{{page.hero_area.title}}" />
-                      <div
-                          class="tp-caption font-weight-600 color-white text-center"
-                          data-x="center"
-                          data-y="middle"
-                          data-voffset="['-165','-165','-165','-145']"
-                          data-fontsize="['50','50','35','30']"
-                          data-lineheight="['65','65','50','45']"
-                          data-width="['1000','1000','600','340']"
-                          data-textAlign="['center','center','center','center']"
-                          data-whitespace="['normal','normal','normal','normal']"
-                          data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                          data-responsive="on"
-                          data-responsive_offset="on"
-                          style="z-index: 9;"
-                      >
-                          {{page.hero_area.title}}
+  <div class="rev_slider_wrapper fullwidth-container">
+    <div id="slider5" class="rev_slider fullwidthbanner" data-version="5.4.7">
+        <ul>
+            <li data-transition="fade" data-thumb="">
+                <img src="{{page.hero_area.header_image}}" alt="{{page.hero_area.title}}" />
+                
+                <div>
+                  <div class="row position-relative" style="height: 60vh;">
+                      <div class="col-12 col-md-6 d-flex justify-content-center align-items-end align-items-md-center mb-0 ">
+                        
+                        <div class="text-present">
+                        {{page.hero_area.sub_title}}
+                        </div>
+
                       </div>
+                      <div class="col-12 col-md-6 position-relative d-flex justify-content-center align-items-center mb-0 " >
+                          <img class="img-present"
+                          src="/assets/innovate/img/sobre_nosotros/fondo.jpg" alt="Código en pantalla">
+                          
+                          
+                      </div>
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
                       <!-- /.tp-caption -->
                       <div
                           class="tp-caption font-weight-400 color-white text-center"
