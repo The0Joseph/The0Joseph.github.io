@@ -46,10 +46,14 @@ two_columns_area_one:
       font-size: 50px;
       text-align: center;
       margin-left: 50px;
+      line-height: 50px;
     }
     .img-present{
       width: 500px;
     }
+    .altura-present{
+        height: 75vh;
+        }
     @media (min-width: 1200px) {
       .container{
         max-width: 1022px !important;
@@ -65,7 +69,15 @@ two_columns_area_one:
         .img-present{
         width: 260px;
         }
+        .text-present{
+          font-size: 20px;
+          margin-right: 40px;
+        }
+        .altura-present{
+        height: 65vh;
+        }
       }
+      
       @media (min-width: 600px) and (max-width: 990px) {
           .desktop {
               display: none;
@@ -97,7 +109,7 @@ two_columns_area_one:
                 <img src="{{page.hero_area.header_image}}" alt="{{page.hero_area.title}}" />
                 
                 <div>
-                  <div class="row position-relative" style="height: 60vh;">
+                  <div class="row position-relative altura-present">
                       <div class="col-12 col-md-6 d-flex justify-content-center align-items-end align-items-md-center mb-0 ">
                         
                         <div class="text-present">
