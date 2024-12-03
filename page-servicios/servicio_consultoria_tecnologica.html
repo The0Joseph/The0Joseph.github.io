@@ -143,19 +143,22 @@ faq_area:
     color: white;
     font-size: 60px;
     text-align: center;
+    margin: 0 20px;
+    line-height: 55px;
+    word-wrap: break-word;
   }
   .img-present{
     width: 500px;
   }
   .altura-present{
-      height: 85vh;
+      height: 100vh;
     }
   @media (min-width: 1200px) {
     .container{
       max-width: 1022px !important;
     }
   }
-  @media (max-width: 995px) {
+  @media (max-width: 992px) {
         .desktop {
             display: none;
         }
@@ -166,10 +169,10 @@ faq_area:
       width: 260px;
       }
       .text-present{
-          font-size: 20px;
+          font-size: 40px;
         }
         .altura-present{
-      height: 65vh;
+      height: 80vh;
       margin: 20px 5px;
     }
     }
@@ -190,6 +193,8 @@ faq_area:
         }
        
     }
+
+    
 </style>
 
 <div class="content-wrapper">
@@ -205,7 +210,7 @@ faq_area:
                 <img src="{{page.hero_area.header_image}}" alt="{{page.hero_area.title}}" />
                 
                 <div>
-                  <div class="row position-relative altura-present">
+                  <div class="row position-relative altura-present" >
                       <div class="col-12 col-md-6 d-flex justify-content-center align-items-end align-items-md-center mb-0 ">
                         
                         <div class="text-present">
