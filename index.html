@@ -107,6 +107,9 @@ services_area:
   
 ---
 <style>
+  .altura-presentacion{
+    height: 100vh;
+  }
   .text-present{
       color: white;
       font-size: 50px;
@@ -119,8 +122,7 @@ services_area:
     }
     .text-subtitulo{
       font-size: 25px;
-      width: 70%;
-      margin: 10px 130px;
+      margin: 35px 60px;
       line-height: 50px;
     }
     @media (min-width: 1200px) {
@@ -168,6 +170,13 @@ services_area:
           }
          
       }
+
+     /* Medidas de Boostrap */
+     @media (max-width: 992px){
+      .altura-presentacion{
+        height: 80vh;
+      }
+     }
   </style>
 
 
@@ -183,14 +192,12 @@ services_area:
                 <li data-transition="fade" data-thumb="">
                     <img src="{{page.hero_area.header_image}}" alt="{{page.hero_area.title}}" />
                     <div>
-                      <div class="row position-relative" style="height: 60vh;">
+                      <div class="row position-relative altura-presentacion">
                           <div class="col-12 col-md-6 d-flex justify-content-center align-items-end align-items-md-center mb-0 ">
                             <div class="text-present">
-                            {{page.hero_area.title}}
-                        
-                            <p class="text-subtitulo">{{page.hero_area.sub_title}}</p>
+                              <div>{{page.hero_area.title}}</div>
+                              <p class="text-subtitulo">{{page.hero_area.sub_title}}</p>
                             </div>
-                      
                           </div>
                           <div class="col-12 col-md-6 position-relative d-flex justify-content-center align-items-center mb-0 " >
                               <img class="img-present"
