@@ -8,7 +8,7 @@ hero_area:
   enable: true
   title: ""
   sub_title: |
-    Nosotros
+    Sobre Nosotros
   button_text: "Get Started"
   button_url: "#"
   header_image: "/assets/images/art/bg6.jpg"
@@ -47,7 +47,9 @@ two_columns_area_one:
         border: 5px;
         border-radius: 30px;
         padding: 40px;
-    
+    }
+    .text-titulo{
+      margin: 35px 60px;;
     }
     .vision-description{
         position:absolute;
@@ -99,14 +101,20 @@ two_columns_area_one:
 
     .text-present{
       color: white;
-      font-size: 23px;
+      font-size: 43px;
     }
     
     .img-present{
-      width: 650PX;
+      width: 500px;
     }
     .altura-present{
       height: 90vh;
+    }
+    .text-subtitulo{
+      font-size: 25px;
+      margin: 35px 60px;
+      line-height: 50px;
+      text-wrap: balance;
     }
     @media (max-width: 995px) {
         .desktop {
@@ -116,7 +124,7 @@ two_columns_area_one:
             display: none;
         }
       .mision-description{
-        bottom: -75px;
+        bottom: -117px;
           left: 0px;
           height: 60%;
           width: 100%;
@@ -126,7 +134,6 @@ two_columns_area_one:
           left: 0px;
           height: 215px;
           width: 100%;  
-      
       }
       .espacio{
         margin-top: 40px;
@@ -139,7 +146,7 @@ two_columns_area_one:
     }
     .text-present{
       color: white;
-      font-size: 20px;
+      font-size: 43px;
     }
     }
    
@@ -170,11 +177,31 @@ two_columns_area_one:
       height: 100vh;
     }
     /* Medidas de Boostrap */
+    @media (max-width: 576px){
+      .altura-presentacion{
+        height: 65vh !important;
+      }
+    .text-present {
+      font-size: 24px !important;
+      line-height: 35px;
+    }
+     }
     @media (max-width: 992px){
       .altura-presentacion{
         height: 80vh;
       }
+      .text-subtitulo{
+          font-size: 13px;
+          margin-top: 10px;
+          margin: 0px 55px;
+          line-height: 25px;
+        }
+      .text-titulo{
+        font-size: 20px;
+        margin: 0px 55px;
+      }
     }
+    
         </style>
     {% include headerup.html extra_class="absolute transparent inverse-text" light_logo="true" container_class="container" %}
 
@@ -187,10 +214,13 @@ two_columns_area_one:
                   <li data-transition="fade" data-thumb="">
                       <img src="{{page.hero_area.header_image}}" alt="{{page.hero_area.title}}" />
                      <div>
-                      <div class="row position-relative" style="height: 60vh;">
+                      <div class="row position-relative altura-presentacion">
                           <div class="col-12 col-md-6 d-flex justify-content-center align-items-end align-items-md-center mb-0 ">
                             <div class="text-present">
-                              {{page.hero_area.sub_title}}
+                              <div class="text-titulo">{{page.hero_area.sub_title}}</div>
+                              <p class="text-subtitulo">
+                                Somos un equipo de profesionales apasionados por la tecnología, dedicados a crear soluciones de software innovadoras que transforman desafíos en oportunidades.
+                              </p>
                             </div>
                           </div>
                           <div class="col-12 col-md-6 position-relative d-flex justify-content-center align-items-center mb-0 " >

@@ -167,8 +167,18 @@ faq_area:
     width: 500px;
   }
   .altura-present{
-      height: 100vh;
+    height: 100vh;
+  }
+  @media (max-width: 576px){
+    .altura-present{
+      height: 65vh !important;
     }
+    .text-present {
+      font-size: 24px !important;
+      line-height: 35px;
+      margin-left: 0;
+    }
+  }
   @media (min-width: 1200px) {
     .container{
       max-width: 1022px !important;
