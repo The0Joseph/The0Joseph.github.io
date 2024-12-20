@@ -46,10 +46,10 @@ social_accounts:
   title: "Síguenos"
   links:
 
-    - url: "#"
+    - url: "https://www.facebook.com/profile.php?id=61556572370304"
       icon: "jam jam-facebook"
 
-    - url: "#"
+    - url: "https://www.linkedin.com/company/101055912/admin/dashboard/"
       icon: "jam jam-linkedin-square"
 
     - url: "#"
