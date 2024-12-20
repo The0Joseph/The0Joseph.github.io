@@ -7128,3 +7128,36 @@ footer.inverse-text address {
 .overflow-hidden {
     overflow: hidden;
 }
+.nav-link{
+    position: relative;
+}
+.nav-link.active{
+    
+}
+.nav-link.active::before{
+    content: "" !important;
+    position: absolute;
+    width: 100%  ;
+    height: 3px;
+    background-color: lightgray;
+    bottom: 0;
+    left: 0;
+
+}
+
+.navbar .navbar-nav .nav-link{
+    padding-top: 1.3rem !important;
+    padding-bottom: 1.3rem !important;
+}
+
+
+/* index */
+
+.img-clients img{
+    filter: grayscale(100%);
+    width: 250px;
+}
+
+.img-clients img:hover{
+    filter: grayscale(0%);
+}

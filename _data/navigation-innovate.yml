@@ -1,12 +1,14 @@
 main_menu:
 
-  - text: "INICIO"
+  - text: "Inicio"
     url: "/"
+    urlPath: "/"
 
-  - text: "NOSOTROS"
+  - text: "Nosotros"
     url: "/page-about/sobre_nosotros.html"
+    urlPath: "/page-about/sobre_nosotros"
 
-  - text: "SERVICIOS"
+  - text: "Servicios"
     url: "#id_servicios"
     menu_type: "megamenu"
     submenu:
@@ -26,6 +28,6 @@ main_menu:
       - text: "Consultoría Tecnológica"
         url: "/page-servicios/servicio_consultoria_tecnologica.html"
 
-  - text: "CONTÁCTANOS"
+  - text: "Contáctanos"
     url: "#id_contactanos"
     
