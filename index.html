@@ -155,7 +155,10 @@ services_area:
         height: 80vh;
         }
 
-        
+        .img-present{
+          width: 100%;
+          margin-left: 0px;
+        }
       }
       @media (min-width: 600px) and (max-width: 990px) {
           .desktop {
@@ -207,13 +210,6 @@ services_area:
         <p class="lead larger" data-aos="fade-up" data-aos-delay="300">{{page.slider_area.sub_title}}</p>
         <div class="space25"></div>
         {% endif %}
-        {% for buttons in page.slider_area.buttons %}
-        <div class="d-inline-block" data-aos="fade-up" data-aos-delay="1800">
-          <a href="{{buttons.url}}" class="btn btn-l btn-white btn-strong-hover btn-icon btn-icon-left mr-10">
-            <i class="{{buttons.icon}}"></i> {{buttons.text}}
-          </a>
-        </div>
-        {% endfor %}
       </div>
       <div class="col-lg-7 col-xl-8">
         <img class="img-present" src="/assets/innovate/img/personas/img5.jpg" alt="Código en pantalla">
@@ -224,8 +220,8 @@ services_area:
     <svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 20.98">
         <path d="M0,0V21H1070V0A6830.24,6830.24,0,0,1,0,0Z" />
     </svg>
+  </div>
 </div>
- </div>
 <!-- /.Presentación -->
 {% endif %}
 
