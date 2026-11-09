@@ -1,0 +1,11 @@
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius);
+  margin-top: 1rem;
+}
+.button:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}

@@ -1,0 +1,10 @@
+.timeline {
+  border-left: 2px solid var(--color-surface);
+  padding-left: 1.5rem;
+  display: grid;
+  gap: 2rem;
+}
+.timeline__period {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}

@@ -1,0 +1,15 @@
+.comingson{
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comingson h1{
+    text-align: center;
+}
+.comingson h2{
+    text-align: center;
+    font-weight: 500;
+}
+
+

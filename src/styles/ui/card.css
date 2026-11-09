@@ -1,0 +1,16 @@
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.card__image {
+  border-radius: calc(var(--radius) - 4px);
+}
+.card__links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
